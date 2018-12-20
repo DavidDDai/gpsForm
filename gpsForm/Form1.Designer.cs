@@ -46,6 +46,7 @@
             this.lb_lat = new System.Windows.Forms.Label();
             this.lb_lon = new System.Windows.Forms.Label();
             this.lb_num = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // textBox1
@@ -57,7 +58,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(540, 40);
+            this.button1.Location = new System.Drawing.Point(516, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -188,6 +189,10 @@
             this.lb_num.TabIndex = 15;
             this.lb_num.Text = "状态：";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -236,6 +241,7 @@
         private System.Windows.Forms.Label lb_lat;
         private System.Windows.Forms.Label lb_lon;
         private System.Windows.Forms.Label lb_num;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
